@@ -1,6 +1,3 @@
-# five9-automation
-Automation script for Five9 contact center.
-
 # Five9 Automation Script
 
 This project automates interactions with the Five9 contact center platform using Python and PyAutoGUI. The script is designed to simulate outbound call handling, voicemail selection, and other workflow actions.
