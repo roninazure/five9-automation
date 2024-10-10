@@ -3,7 +3,6 @@ Five9 Automation Script
 This project automates interactions with the Five9 contact center platform using Python and PyAutoGUI. The script simulates outbound call handling, voicemail selection, and other workflow actions within the Five9 interface.
 
 Features
-
 	•	Automates mouse clicks through the Five9 interface.
 	•	Handles actions such as selecting “Not Ready,” “Ready (Voice),” and “Voicemail-NoAnswer.”
 	•	Configurable screen coordinates via the config.yaml file for flexible UI adaptation.
@@ -12,11 +11,11 @@ Features
 Requirements
 
 To run the automation script, you’ll need:
-
 	•	Python 3.x
 	•	Required Python libraries:
 	•	pyautogui
 	•	pyyaml
+
 
 You can install the necessary libraries with:
 
