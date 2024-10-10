@@ -54,7 +54,6 @@ coordinates:
   dropdown_coords: [2439, 724]
   voicemail_option_coords: [2429, 774]
 
-
   Running the Script
 
 1. Start the Script:
