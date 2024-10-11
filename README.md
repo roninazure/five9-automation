@@ -76,6 +76,48 @@ Troubleshooting
 	•	Timing Issues: If the script is running too slowly or too quickly, adjust the time.sleep() values in the nitro6.py script.
 	•	Coordinate Issues: Ensure the config.yaml coordinates are accurate and match your current screen resolution and UI elements.
 
+ Voice Playback Functionality
+
+The voice2.py script plays random voice memo recordings from a specified folder on your system. It uses the pydub library to handle and play .m4a audio files. The script selects a random voice recording each time and allows the user to decide whether to play another recording or exit.
+
+How It Works
+
+	•	The script searches for .m4a files in the Voice Memos folder located at:
+/Users/scottsteele/Library/Group Containers/group.com.apple.VoiceMemos.shared/Recordings
+	•	It picks a random .m4a file and plays it using the pydub library.
+	•	After playing the file, it prompts the user whether they would like to play another recording (y for yes, n for no).
+
+Requirements
+
+To use the voice2.py script, you’ll need the following:
+
+	1.	Install pydub:
+
+ pip install pydub
+
+ 	2.	Install an Audio Playback Backend:
+	3.	For macOS, you’ll need to install ffmpeg or libav to support .m4a audio playback.
+Example (using Homebrew):
+
+brew install ffmpeg
+
+Running the Script
+
+	1.	Run the voice2.py script:
+ python3 voice2.py
+
+ 	1.	Interact with the Script:
+	2.	Once it plays a recording, you will be prompted to play another (y/n).
+	3.	The script will exit when you choose not to play another recording.
+
+Customization
+
+	1.	Folder Path: If your recordings are stored in a different location, you can modify the recordings_folder variable to point to the correct folder.
+	2.	Supported Formats: While the script is designed for .m4a files, pydub supports various audio formats, such as .mp3 and .wav. You can modify the script to handle 			different file types by changing the file extension in the recordings filter.
+
+This will provide clear documentation about how the voice2.py script works, the requirements for running it, and how it can be customized.
+
+
 Contributions
 
 Feel free to fork this repository and submit pull requests for improvements or additional features.
